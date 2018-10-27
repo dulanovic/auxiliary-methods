@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MergeSort">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../MergeSort/dist/MergeSort.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
