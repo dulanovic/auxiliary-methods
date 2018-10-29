@@ -583,5 +583,33 @@ public class Mathematics {
         }
         return sum;
     }
+    
+    public static double pdf(double x, double mean, double stddev) {
+        return pdf(x - mean / stddev) / stddev;
+    }
+    
+    public static double pdf(double x) {
+        return (1 / Math.sqrt(2.0 * Math.PI)) * Math.exp(-Math.pow(x, 2.0) / 2.0);
+    }
+    
+    public static double cdf(double z) {
+        if (z > 8.0) {
+            return 1.0;
+        }
+        if (z < -8.0) {
+            return 0.0;
+        }
+        double sum = 0.0;
+        double term = z;
+        for (int i = 3; sum + term != sum; i += 2) {
+            sum += term;
+            term = term * z * z / i;
+        }
+        return 0.5 + pdf(z) * sum;
+    }
+    
+    public static double cdf(double z, double mean, double stddev) {
+        return cdf((z - mean) / stddev);
+    }
 
 }
