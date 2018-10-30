@@ -1,10 +1,12 @@
 package main;
 
-import api.Mathematics;
+import api.LCS;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.printf("VALUE ---> %f\n", Mathematics.integralDef(-1.0, 0.5, 100));
+        String s1 = "acggcggatacg";
+        String s2 = "ggcaccacg";
+        System.out.printf("LCS ---> %d\n", LCS.calculate(s1, s2));
     }
 }
