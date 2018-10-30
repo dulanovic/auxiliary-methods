@@ -10,7 +10,7 @@ public class Mathematics {
 
     public static double sqrt(double number) {
         double epsilon = 1e-15, t = number;
-        while (java.lang.Math.abs(t - number / t) > epsilon * t) {
+        while (Math.abs(t - number / t) > epsilon * t) {
             t = (t + number / t) / 2.0;
         }
         return t;
