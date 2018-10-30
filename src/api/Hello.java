@@ -1,3 +1,5 @@
+package api;
+
 public class Hello {
 
     public Hello(int number) {
@@ -15,7 +17,7 @@ public class Hello {
             } else {
                 hello += "th";
             }
-            hello += " Hello!!!";
+            hello += " api.Hello!!!";
             System.out.printf("%s\n", hello);
         }
     }

@@ -1,3 +1,5 @@
+package api;
+
 public class ISBN {
 
     private ISBN() {}
@@ -14,9 +16,9 @@ public class ISBN {
         }
         int d10 = 11 - (sum % 11);
         if (d10 != 10) {
-            System.out.printf("10-digit ISBN number ---> %s-%d\n", isbn9, d10);
+            System.out.printf("10-digit api.ISBN number ---> %s-%d\n", isbn9, d10);
         } else {
-            System.out.printf("10-digit ISBN number ---> %s-X\n", isbn9);
+            System.out.printf("10-digit api.ISBN number ---> %s-X\n", isbn9);
         }
     }
 

@@ -1,3 +1,5 @@
+package api;
+
 public class Fibonacci {
 
     private Fibonacci() {}

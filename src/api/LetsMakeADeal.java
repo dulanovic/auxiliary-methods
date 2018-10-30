@@ -1,3 +1,5 @@
+package api;
+
 public class LetsMakeADeal {
 
     private LetsMakeADeal() {}

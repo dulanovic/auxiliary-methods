@@ -1,3 +1,5 @@
+package api;
+
 public class RandomWalker {
 
     private RandomWalker() {}
